@@ -4,5 +4,4 @@ from prueba_api import models
 
 def index(request):
     persona = models.Persona.objects.all()
-    
-    return HttpResponse(persona)
+    return render("index.html")
